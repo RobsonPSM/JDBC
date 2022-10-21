@@ -14,7 +14,7 @@ public class JdbcInsere {
 			con = FabricaDeConexoes.getConnection();
 			stmt = con.prepareStatement(sqlinsert);
 			stmt.setString(1, "Robson");
-			stmt.setString(2, "robson.noia@gmail.com");
+			stmt.setString(2, "robson@gmail.com");
 			stmt.setString(3, "Fundão ilha do governador");
 			int totalRegistrosAfetados = stmt.executeUpdate();
 			if(totalRegistrosAfetados == 0) {
